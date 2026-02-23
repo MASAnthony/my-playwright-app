@@ -29,3 +29,7 @@ dist-ssr
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+
+# Custom UI Dashbaord
+screenshots/
+public/test-results.json

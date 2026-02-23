@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route, useNavigate, Link } from 'react-router-dom'
+import TestReportComponent from './components/TestReportComponent';
 
 function LoginComponent() {
   const [username, setUsername] = useState('')
@@ -73,6 +74,7 @@ function DashboardComponent() {
         <p id="success-message" style={{ fontSize: '1.2rem', marginBottom: '30px' }}>Welcome! You have successfully logged in.</p>
         <div style={{ display: 'flex', gap: '15px', justifyContent: 'center' }}>
           <Link to="/user" style={{ padding: '12px 24px', backgroundColor: '#28a745', color: 'white', textDecoration: 'none', borderRadius: '6px', fontSize: '1.1rem', fontWeight: 600 }}>Manage Users</Link>
+          <Link to="/test-report" style={{ padding: '12px 24px', backgroundColor: '#60a5fa', color: 'white', textDecoration: 'none', borderRadius: '6px', fontSize: '1.1rem', fontWeight: 600 }}>View Test Results</Link>
           <button 
             id="logout-button" 
             onClick={() => navigate('/')} 
@@ -85,6 +87,8 @@ function DashboardComponent() {
     </div>
   )
 }
+
+
 
 function UserComponent() {
   return (
@@ -103,8 +107,9 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<LoginComponent />} />
-        <Route path="/dashboard" element={<DashboardComponent />} />
-        <Route path="/user" element={<UserComponent />} />
+        {/* <Route path="/dashboard" element={<DashboardComponent />} /> */}
+        <Route path="/test-report" element={<TestReportComponent />} />
+        {/* <Route path="/user" element={<UserComponent />} /> */}
       </Routes>
     </Router>
   )
