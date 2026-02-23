@@ -13,7 +13,7 @@ function LoginComponent() {
     // Simulated authentication
     if (username === 'Anthony' && password === 'Test@123') {
       setError('')
-      navigate('/dashboard')
+      navigate('/test-report')
     } else {
       setError('Invalid username or password')
     }
@@ -90,17 +90,17 @@ function DashboardComponent() {
 
 
 
-function UserComponent() {
-  return (
-    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', backgroundColor: '#f5f5f5' }}>
-      <div style={{ padding: '60px', width: '100%', minWidth: '400px', maxWidth: '600px', margin: '0 20px', textAlign: 'center', fontFamily: 'sans-serif', backgroundColor: '#ffffff', borderRadius: '12px', boxShadow: '0 8px 30px rgba(0,0,0,0.12)', color: '#333' }}>
-        <h2 style={{ fontSize: '2rem', marginBottom: '20px' }}>User Management</h2>
-        <p style={{ fontSize: '1.2rem', marginBottom: '30px' }}>Here you can view and edit user details.</p>
-        <Link to="/dashboard" style={{ padding: '12px 24px', backgroundColor: '#007bff', color: 'white', textDecoration: 'none', borderRadius: '6px', fontSize: '1.1rem', fontWeight: 600 }}>Back to Dashboard</Link>
-      </div>
-    </div>
-  )
-}
+// function UserComponent() {
+//   return (
+//     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', backgroundColor: '#f5f5f5' }}>
+//       <div style={{ padding: '60px', width: '100%', minWidth: '400px', maxWidth: '600px', margin: '0 20px', textAlign: 'center', fontFamily: 'sans-serif', backgroundColor: '#ffffff', borderRadius: '12px', boxShadow: '0 8px 30px rgba(0,0,0,0.12)', color: '#333' }}>
+//         <h2 style={{ fontSize: '2rem', marginBottom: '20px' }}>User Management</h2>
+//         <p style={{ fontSize: '1.2rem', marginBottom: '30px' }}>Here you can view and edit user details.</p>
+//         <Link to="/dashboard" style={{ padding: '12px 24px', backgroundColor: '#007bff', color: 'white', textDecoration: 'none', borderRadius: '6px', fontSize: '1.1rem', fontWeight: 600 }}>Back to Dashboard</Link>
+//       </div>
+//     </div>
+//   )
+// }
 
 function App() {
   return (

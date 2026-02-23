@@ -3,7 +3,7 @@
     "configFile": "C:\\Users\\Anthony\\OneDrive - SKILLMINE TECHNOLOGY CONSULTING PRIVATE LIMITED\\Documents\\Testing\\playwright\\my-playwright-app\\playwright.config.ts",
     "rootDir": "C:/Users/Anthony/OneDrive - SKILLMINE TECHNOLOGY CONSULTING PRIVATE LIMITED/Documents/Testing/playwright/my-playwright-app/tests",
     "forbidOnly": false,
-    "fullyParallel": true,
+    "fullyParallel": false,
     "globalSetup": null,
     "globalTeardown": null,
     "globalTimeout": 0,
@@ -11,16 +11,16 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 2
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "C:/Users/Anthony/OneDrive - SKILLMINE TECHNOLOGY CONSULTING PRIVATE LIMITED/Documents/Testing/playwright/my-playwright-app/test-results",
+        "outputDir": "C:/Users/Anthony/OneDrive - SKILLMINE TECHNOLOGY CONSULTING PRIVATE LIMITED/Documents/Testing/playwright/my-playwright-app/public/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 2
+          "actualWorkers": 1
         },
         "id": "chromium",
         "name": "chromium",
@@ -57,7 +57,7 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.58.2",
-    "workers": 4,
+    "workers": 1,
     "webServer": {
       "command": "npm run dev",
       "url": "http://localhost:5173",
@@ -66,79 +66,202 @@
   },
   "suites": [
     {
-      "title": "login.spec.ts",
-      "file": "login.spec.ts",
+      "title": "afterLogin.spec.ts",
+      "file": "afterLogin.spec.ts",
       "column": 0,
       "line": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "Dashboard workflow test",
-          "ok": false,
-          "tags": [],
-          "tests": [
+          "title": "QC Add To Cart - End to End Flow",
+          "file": "afterLogin.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
+              "title": "User should login and complete booking successfully",
+              "ok": false,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 13787,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('h2')\nExpected substring: \u001b[32m\"Dashboard Overview\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('h2')\u001b[22m\n",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('h2')\nExpected substring: \u001b[32m\"Dashboard Overview\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('h2')\u001b[22m\n\n    at C:\\Users\\Anthony\\OneDrive - SKILLMINE TECHNOLOGY CONSULTING PRIVATE LIMITED\\Documents\\Testing\\playwright\\my-playwright-app\\tests\\login.spec.ts:13:38",
-                    "location": {
-                      "file": "C:\\Users\\Anthony\\OneDrive - SKILLMINE TECHNOLOGY CONSULTING PRIVATE LIMITED\\Documents\\Testing\\playwright\\my-playwright-app\\tests\\login.spec.ts",
-                      "column": 38,
-                      "line": 13
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 11 |\u001b[39m     \u001b[90m// Verify we are on the dashboard\u001b[39m\n \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[35m/.*dashboard/\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'h2'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'Dashboard Overview'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m\n \u001b[90m 15 |\u001b[39m     \u001b[90m// Verify navigation to User page\u001b[39m\n \u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Manage Users'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "C:\\Users\\Anthony\\OneDrive - SKILLMINE TECHNOLOGY CONSULTING PRIVATE LIMITED\\Documents\\Testing\\playwright\\my-playwright-app\\tests\\login.spec.ts",
-                        "column": 38,
-                        "line": 13
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('h2')\nExpected substring: \u001b[32m\"Dashboard Overview\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('h2')\u001b[22m\n\n\n\u001b[0m \u001b[90m 11 |\u001b[39m     \u001b[90m// Verify we are on the dashboard\u001b[39m\n \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[35m/.*dashboard/\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'h2'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'Dashboard Overview'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m\n \u001b[90m 15 |\u001b[39m     \u001b[90m// Verify navigation to User page\u001b[39m\n \u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Manage Users'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\Anthony\\OneDrive - SKILLMINE TECHNOLOGY CONSULTING PRIVATE LIMITED\\Documents\\Testing\\playwright\\my-playwright-app\\tests\\login.spec.ts:13:38\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-02-23T07:45:05.463Z",
+                  "timeout": 30000,
                   "annotations": [],
-                  "attachments": [
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
                     {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\Anthony\\OneDrive - SKILLMINE TECHNOLOGY CONSULTING PRIVATE LIMITED\\Documents\\Testing\\playwright\\my-playwright-app\\test-results\\login-Dashboard-workflow-test-chromium\\test-failed-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\Anthony\\OneDrive - SKILLMINE TECHNOLOGY CONSULTING PRIVATE LIMITED\\Documents\\Testing\\playwright\\my-playwright-app\\test-results\\login-Dashboard-workflow-test-chromium\\video.webm"
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 31607,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Anthony\\OneDrive - SKILLMINE TECHNOLOGY CONSULTING PRIVATE LIMITED\\Documents\\Testing\\playwright\\my-playwright-app\\tests\\afterLogin.spec.ts",
+                            "column": 63,
+                            "line": 41
+                          },
+                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Add' }).first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 39 |\u001b[39m\n \u001b[90m 40 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Add to Cart and View Cart'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Add'\u001b[39m })\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'View Cart'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Review Cart'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 44 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\Anthony\\OneDrive - SKILLMINE TECHNOLOGY CONSULTING PRIVATE LIMITED\\Documents\\Testing\\playwright\\my-playwright-app\\tests\\afterLogin.spec.ts:41:63\u001b[22m\n\u001b[2m    at C:\\Users\\Anthony\\OneDrive - SKILLMINE TECHNOLOGY CONSULTING PRIVATE LIMITED\\Documents\\Testing\\playwright\\my-playwright-app\\tests\\afterLogin.spec.ts:40:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to application",
+                          "duration": 2800
+                        },
+                        {
+                          "title": "Navigate to Health Packages",
+                          "duration": 1190
+                        },
+                        {
+                          "title": "Initiate login by adding package",
+                          "duration": 1765
+                        },
+                        {
+                          "title": "Enter OTP and Login",
+                          "duration": 5370
+                        },
+                        {
+                          "title": "Select Address and Package",
+                          "duration": 2079
+                        },
+                        {
+                          "title": "Add to Cart and View Cart",
+                          "duration": 16507,
+                          "error": {
+                            "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Add' }).first()\u001b[22m\n",
+                            "stack": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Add' }).first()\u001b[22m\n\n    at C:\\Users\\Anthony\\OneDrive - SKILLMINE TECHNOLOGY CONSULTING PRIVATE LIMITED\\Documents\\Testing\\playwright\\my-playwright-app\\tests\\afterLogin.spec.ts:41:63\n    at C:\\Users\\Anthony\\OneDrive - SKILLMINE TECHNOLOGY CONSULTING PRIVATE LIMITED\\Documents\\Testing\\playwright\\my-playwright-app\\tests\\afterLogin.spec.ts:40:16",
+                            "location": {
+                              "file": "C:\\Users\\Anthony\\OneDrive - SKILLMINE TECHNOLOGY CONSULTING PRIVATE LIMITED\\Documents\\Testing\\playwright\\my-playwright-app\\tests\\afterLogin.spec.ts",
+                              "column": 63,
+                              "line": 41
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 39 |\u001b[39m\n \u001b[90m 40 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Add to Cart and View Cart'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Add'\u001b[39m })\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'View Cart'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Review Cart'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 44 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2026-02-23T12:08:16.135Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Anthony\\OneDrive - SKILLMINE TECHNOLOGY CONSULTING PRIVATE LIMITED\\Documents\\Testing\\playwright\\my-playwright-app\\public\\test-results\\afterLogin-QC-Add-To-Cart--c47ed-mplete-booking-successfully-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Anthony\\OneDrive - SKILLMINE TECHNOLOGY CONSULTING PRIVATE LIMITED\\Documents\\Testing\\playwright\\my-playwright-app\\public\\test-results\\afterLogin-QC-Add-To-Cart--c47ed-mplete-booking-successfully-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Anthony\\OneDrive - SKILLMINE TECHNOLOGY CONSULTING PRIVATE LIMITED\\Documents\\Testing\\playwright\\my-playwright-app\\public\\test-results\\afterLogin-QC-Add-To-Cart--c47ed-mplete-booking-successfully-chromium\\error-context.md"
+                        }
+                      ]
                     }
                   ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\Anthony\\OneDrive - SKILLMINE TECHNOLOGY CONSULTING PRIVATE LIMITED\\Documents\\Testing\\playwright\\my-playwright-app\\tests\\login.spec.ts",
-                    "column": 38,
-                    "line": 13
-                  }
+                  "status": "unexpected"
                 }
               ],
-              "status": "unexpected"
+              "id": "2a621cff1ab442b5dae2-50e3b7282c4565467e81",
+              "file": "afterLogin.spec.ts",
+              "line": 5,
+              "column": 3
             }
-          ],
-          "id": "41d3fd2474a19feb00a1-d791de5d93af35f46ccf",
-          "file": "login.spec.ts",
-          "line": 4,
-          "column": 1
+          ]
+        }
+      ]
+    },
+    {
+      "title": "firstLogin.spec.ts",
+      "file": "firstLogin.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Home Sample Collection - First Login Flow",
+          "file": "firstLogin.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "User can login and complete a fresh booking",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 22561,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to application",
+                          "duration": 786
+                        },
+                        {
+                          "title": "Initiate login with mobile number",
+                          "duration": 2892
+                        },
+                        {
+                          "title": "Enter OTP and submit",
+                          "duration": 4170
+                        },
+                        {
+                          "title": "Select address and navigate to healthy packages",
+                          "duration": 3296
+                        },
+                        {
+                          "title": "Add package and view cart",
+                          "duration": 4411
+                        },
+                        {
+                          "title": "Select member and review cart",
+                          "duration": 1104
+                        },
+                        {
+                          "title": "Choose payment and confirm booking",
+                          "duration": 3873
+                        }
+                      ],
+                      "startTime": "2026-02-23T12:08:55.826Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8c48c105da2507857824-4a0314ea542a1cc62347",
+              "file": "firstLogin.spec.ts",
+              "line": 5,
+              "column": 3
+            }
+          ]
         }
       ]
     },
@@ -162,9 +285,9 @@
               "results": [
                 {
                   "workerIndex": 1,
-                  "parallelIndex": 1,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 28102,
+                  "duration": 21935,
                   "errors": [],
                   "stdout": [
                     {
@@ -173,7 +296,17 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-02-23T07:45:05.426Z",
+                  "steps": [
+                    {
+                      "title": "Open main site and handle popups",
+                      "duration": 16791
+                    },
+                    {
+                      "title": "Click Instatest and wait for new tab",
+                      "duration": 2300
+                    }
+                  ],
+                  "startTime": "2026-02-23T12:09:19.498Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -191,9 +324,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-23T07:44:56.949Z",
-    "duration": 42304.028,
-    "expected": 1,
+    "startTime": "2026-02-23T12:08:09.603Z",
+    "duration": 93047.701,
+    "expected": 2,
     "skipped": 0,
     "unexpected": 1,
     "flaky": 0

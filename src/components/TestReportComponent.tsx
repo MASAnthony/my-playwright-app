@@ -57,56 +57,195 @@ export default function TestReportComponent() {
           </div>
         ) : (
           <>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px', marginBottom: '40px' }}>
-              {[
-                { label: 'Total Executed', value: stats.total, color: '#3b82f6', bg: 'rgba(59, 130, 246, 0.1)' },
-                { label: 'Passed', value: stats.passed, color: '#22c55e', bg: 'rgba(34, 197, 94, 0.1)' },
-                { label: 'Failed', value: stats.failed, color: '#ef4444', bg: 'rgba(239, 68, 68, 0.1)' },
-              ].map((stat, i) => (
-                <div key={i} style={{ backgroundColor: 'rgba(40, 42, 54, 0.8)', border: '1px solid rgba(255,255,255,0.05)', borderRadius: '12px', padding: '20px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                   <span style={{ color: '#9ca3af', fontSize: '0.9rem', fontWeight: 500 }}>{stat.label}</span>
-                  <span style={{ fontSize: '2.5rem', fontWeight: 700, color: stat.color }}>{stat.value}</span>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '40px', marginBottom: '40px' }}>
+              {/* Graphical Representation (Donut Chart) */}
+              <div style={{ flex: '1', minWidth: '250px', backgroundColor: 'rgba(40, 42, 54, 0.8)', border: '1px solid rgba(255,255,255,0.05)', borderRadius: '12px', padding: '24px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+                <h3 style={{ margin: '0 0 20px 0', fontSize: '1.2rem', color: '#f3f4f6', alignSelf: 'flex-start' }}>Execution Overview</h3>
+                <div style={{ position: 'relative', width: '200px', height: '200px' }}>
+                  <svg viewBox="0 0 36 36" style={{ width: '100%', height: '100%', transform: 'rotate(-90deg)' }}>
+                    {/* Background circle */}
+                    <path
+                      d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                      fill="none"
+                      stroke="rgba(255,255,255,0.05)"
+                      strokeWidth="3.5"
+                    />
+                    {/* Passed segment */}
+                    {stats.passed > 0 && (
+                      <path
+                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                        fill="none"
+                        stroke="#22c55e"
+                        strokeWidth="3.5"
+                        strokeDasharray={`${(stats.passed / stats.total) * 100}, 100`}
+                        style={{ transition: 'stroke-dasharray 1s ease' }}
+                      />
+                    )}
+                    {/* Failed segment */}
+                    {stats.failed > 0 && (
+                      <path
+                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                        fill="none"
+                        stroke="#ef4444"
+                        strokeWidth="3.5"
+                        strokeDasharray={`${(stats.failed / stats.total) * 100}, 100`}
+                        strokeDashoffset={-(stats.passed / stats.total) * 100}
+                        style={{ transition: 'stroke-dasharray 1s ease' }}
+                      />
+                    )}
+                  </svg>
+                  {/* Center Text */}
+                  <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+                    <span style={{ fontSize: '2rem', fontWeight: 'bold', color: '#f3f4f6' }}>
+                      {stats.total > 0 ? Math.round((stats.passed / stats.total) * 100) : 0}%
+                    </span>
+                    <span style={{ fontSize: '0.9rem', color: '#9ca3af' }}>Pass Rate</span>
+                  </div>
                 </div>
-              ))}
+              </div>
+
+              {/* Stats Cards */}
+              <div style={{ flex: '2', minWidth: '300px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '20px', flex: 1 }}>
+                  {[
+                    { label: 'Total Executed', value: stats.total, color: '#3b82f6', icon: <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" /> },
+                    { label: 'Passed', value: stats.passed, color: '#22c55e', icon: <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /> },
+                    { label: 'Failed', value: stats.failed, color: '#ef4444', icon: <path d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /> }
+                  ].map((stat, i) => (
+                    <div key={i} style={{ backgroundColor: 'rgba(40, 42, 54, 0.8)', border: '1px solid rgba(255,255,255,0.05)', borderRadius: '12px', padding: '24px', display: 'flex', flexDirection: 'column', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
+                      <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke={stat.color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ position: 'absolute', right: '-10px', bottom: '-10px', opacity: 0.1 }}>
+                        {stat.icon}
+                      </svg>
+                      <span style={{ color: '#9ca3af', fontSize: '1rem', fontWeight: 500, marginBottom: '8px' }}>{stat.label}</span>
+                      <span style={{ fontSize: '3rem', fontWeight: 800, color: stat.color, lineHeight: 1 }}>{stat.value}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
 
-            <div style={{ backgroundColor: 'rgba(40, 42, 54, 0.8)', border: '1px solid rgba(239, 68, 68, 0.2)', borderRadius: '12px', overflow: 'hidden' }}>
-              <div style={{ padding: '16px 20px', borderBottom: '1px solid rgba(239, 68, 68, 0.2)', backgroundColor: 'rgba(239, 68, 68, 0.05)' }}>
-                <h3 style={{ margin: 0, fontSize: '1.2rem', fontWeight: 600, color: '#fca5a5' }}>Failed Tests</h3>
-              </div>
-              
-              <div style={{ padding: '0' }}>
-                {stats.suites.flatMap(suite => 
-                   (suite.specs || []).filter((s:any) => !s.ok).map((spec: any, j: number) => {
-                       const errorMsg = spec.tests?.[0]?.results?.[0]?.error?.message || "Unknown Error";
-                       return (
-                          <div key={`${suite.title}-${j}`} style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
-                             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '12px' }}>
-                                 <div>
-                                    <span style={{ color: '#9ca3af', fontSize: '0.85rem', display: 'block', marginBottom: '4px' }}>{suite.title}</span>
-                                    <h4 style={{ margin: '0', fontSize: '1.1rem', color: '#f3f4f6' }}>{spec.title}</h4>
-                                 </div>
-                                 <span style={{ padding: '4px 10px', borderRadius: '4px', fontSize: '0.75rem', fontWeight: 600, backgroundColor: 'rgba(239, 68, 68, 0.1)', color: '#fca5a5', border: '1px solid rgba(239, 68, 68, 0.2)' }}>
-                                   FAILED
-                                 </span>
-                             </div>
-                             <div style={{ backgroundColor: 'rgba(0,0,0,0.3)', padding: '16px', borderRadius: '8px', overflowX: 'auto' }}>
-                                 <pre style={{ margin: 0, color: '#f87171', fontSize: '0.9rem', fontFamily: 'monospace', whiteSpace: 'pre-wrap' }}>
-                                     {errorMsg}
-                                 </pre>
-                             </div>
-                          </div>
-                       )
-                   })
-                )}
-                
-                {stats.failed === 0 && (
-                  <div style={{ padding: '40px', textAlign: 'center', color: '#22c55e' }}>
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ margin: '0 auto 16px', display: 'block' }}><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                    <h3 style={{ margin: '0 0 8px 0', fontSize: '1.2rem' }}>All Tests Passed!</h3>
-                    <p style={{ margin: 0, color: '#9ca3af' }}>No execution failures found in the latest report.</p>
-                  </div>
-                )}
+            {/* Detailed Suite Information */}
+            <div style={{ marginTop: '40px' }}>
+              <h2 style={{ fontSize: '1.5rem', fontWeight: 700, margin: '0 0 20px 0', color: '#e5e7eb' }}>Test Suites Breakdown</h2>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                {stats.suites.map((suite, idx) => {
+                  const getAllSpecs = (s: any): any[] => {
+                    let specs = s.specs || [];
+                    if (s.suites) {
+                      s.suites.forEach((subSuite: any) => {
+                        specs = [...specs, ...getAllSpecs(subSuite)];
+                      });
+                    }
+                    return specs;
+                  };
+
+                  const allSpecs = getAllSpecs(suite);
+                  const suiteDurationMs = allSpecs.reduce((acc: number, spec: any) => 
+                     acc + (spec.tests?.[0]?.results?.[0]?.duration || 0), 0) || 0;
+                  const suiteDurationSec = (suiteDurationMs / 1000).toFixed(2);
+                  
+                  return (
+                    <div key={idx} style={{ backgroundColor: 'rgba(30, 30, 46, 0.6)', border: '1px solid rgba(255,255,255,0.05)', borderRadius: '12px', padding: '24px' }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
+                        <h3 style={{ margin: 0, fontSize: '1.2rem', color: '#f3f4f6', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ color: '#9ca3af' }}><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                          {suite.file}
+                        </h3>
+                        <span style={{ fontSize: '0.9rem', color: '#9ca3af', backgroundColor: 'rgba(0,0,0,0.2)', padding: '4px 10px', borderRadius: '20px' }}>
+                          {suiteDurationSec}s
+                        </span>
+                      </div>
+                      
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                        {allSpecs.map((spec: any, sIdx: number) => {
+                          const result = spec.tests?.[0]?.results?.[0];
+                          const durationMs = result?.duration || 0;
+                          
+                          // Convert absolute paths to relative paths for the browser
+                          // Assuming the path contains "public/test-results/..."
+                          const getRelativePath = (absPath: string) => {
+                            if (!absPath) return "";
+                            const parts = absPath.split(/[\\/]/);
+                            const publicIdx = parts.indexOf("public");
+                            if (publicIdx !== -1) {
+                              return "/" + parts.slice(publicIdx + 1).join("/");
+                            }
+                            return "";
+                          };
+
+                          return (
+                            <div key={sIdx} style={{ backgroundColor: 'rgba(0,0,0,0.15)', borderRadius: '8px', overflow: 'hidden', borderLeft: `4px solid ${spec.ok ? '#22c55e' : '#ef4444'}` }}>
+                              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '12px 16px' }}>
+                                <div>
+                                  <span style={{ fontSize: '1rem', color: '#d1d5db' }}>{spec.title}</span>
+                                </div>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                                  <span style={{ fontSize: '0.85rem', color: '#9ca3af' }}>{durationMs}ms</span>
+                                  {spec.ok ? (
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22c55e" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                  ) : (
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef4444" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                  )}
+                                </div>
+                              </div>
+
+                              {/* Test Steps Section */}
+                              {result?.steps?.length > 0 && (
+                                <div style={{ padding: '0 16px 12px 16px', borderTop: '1px solid rgba(255,255,255,0.05)', backgroundColor: 'rgba(255,255,255,0.02)' }}>
+                                  <p style={{ fontSize: '0.75rem', fontWeight: 600, color: '#9ca3af', margin: '12px 0 8px 0', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Execution Steps</p>
+                                  <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                                    {result.steps.map((step: any, stepIdx: number) => (
+                                      <div key={stepIdx} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.85rem', color: '#9ca3af', padding: '4px 8px', backgroundColor: 'rgba(0,0,0,0.1)', borderRadius: '4px' }}>
+                                        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                          <span style={{ color: '#4f46e5', fontWeight: 'bold' }}>{stepIdx + 1}.</span>
+                                          <span>{step.title}</span>
+                                        </div>
+                                        <span style={{ fontSize: '0.75rem' }}>{step.duration}ms</span>
+                                      </div>
+                                    ))}
+                                  </div>
+                                </div>
+                              )}
+                              
+                              {/* Attachments Section */}
+                              {result?.attachments?.length > 0 && (
+                                <div style={{ padding: '0 16px 16px 16px', display: 'flex', flexWrap: 'wrap', gap: '15px' }}>
+                                  {result.attachments.map((attachment: any, aIdx: number) => {
+                                    const relPath = getRelativePath(attachment.path);
+                                    if (!relPath) return null;
+
+                                    if (attachment.name === "screenshot") {
+                                      return (
+                                        <div key={aIdx} style={{ maxWidth: '300px' }}>
+                                          <p style={{ fontSize: '0.75rem', color: '#9ca3af', marginBottom: '4px' }}>Screenshot</p>
+                                          <a href={relPath} target="_blank" rel="noopener noreferrer">
+                                            <img src={relPath} alt="Failure Screenshot" style={{ width: '100%', borderRadius: '4px', border: '1px solid rgba(255,255,255,0.1)' }} />
+                                          </a>
+                                        </div>
+                                      );
+                                    }
+                                    if (attachment.name === "video") {
+                                      return (
+                                        <div key={aIdx} style={{ maxWidth: '300px' }}>
+                                          <p style={{ fontSize: '0.75rem', color: '#9ca3af', marginBottom: '4px' }}>Video</p>
+                                          <video controls style={{ width: '100%', borderRadius: '4px', border: '1px solid rgba(255,255,255,0.1)' }}>
+                                            <source src={relPath} type="video/webm" />
+                                            Your browser does not support the video tag.
+                                          </video>
+                                        </div>
+                                      );
+                                    }
+                                    return null;
+                                  })}
+                                </div>
+                              )}
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </>
