@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","23234","Verify Instatest navigation and check Unserviceable Location","chromium","2026-02-23","passed","2026-02-23","","sterling.spec.ts","",""
+"","22915","User can login and complete a fresh booking","chromium","2026-02-23","failed","2026-02-23","Home Sample Collection - First Login Flow","firstLogin.spec.ts","",""
+"","31841","User should login and complete booking successfully","chromium","2026-02-23","broken","2026-02-23","QC Add To Cart - End to End Flow","afterLogin.spec.ts","",""

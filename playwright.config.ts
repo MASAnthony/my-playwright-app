@@ -25,7 +25,8 @@ export default defineConfig({
   outputDir: 'public/test-results',
   reporter: [
     ["html", { open: "on-failure" }],
-    ['json', { outputFile: 'public/test-results.json' }]
+    ['json', { outputFile: 'public/test-results.json' }],
+    ['allure-playwright', { outputFolder: 'public/allure-results' }],
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {

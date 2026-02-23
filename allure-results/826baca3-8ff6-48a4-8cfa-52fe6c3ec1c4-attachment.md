@@ -1,0 +1,74 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - heading [level=2] [ref=e4]: Accuris Express
+    - img [ref=e5]
+    - img [ref=e6]
+    - img [ref=e7]
+    - img [ref=e8]
+    - img [ref=e9]
+  - banner [ref=e10]:
+    - generic [ref=e12]:
+      - link "Accuris Express - Book Lab Tests & Health Packages Online" [ref=e14] [cursor=pointer]:
+        - /url: /
+        - img "Accuris Express - Book Lab Tests & Health Packages Online" [ref=e15]
+      - generic [ref=e16]:
+        - generic [ref=e18] [cursor=pointer]:
+          - generic [ref=e19]:
+            - generic [ref=e20]: "22"
+            - generic [ref=e21]: Mins
+          - img "Tube" [ref=e22]
+          - generic [ref=e23]:
+            - paragraph [ref=e24]: Collect from Home
+            - generic [ref=e25]:
+              - generic "Vatva, 382445" [ref=e26]
+              - img [ref=e27]
+        - generic [ref=e29]:
+          - textbox "Search tests, packages..." [ref=e30] [cursor=pointer]
+          - button "Voice search" [ref=e31] [cursor=pointer]:
+            - img [ref=e32]
+          - button "Search" [ref=e35] [cursor=pointer]:
+            - img [ref=e36]
+      - generic [ref=e39]:
+        - link "Cart" [ref=e40] [cursor=pointer]:
+          - /url: /cart
+          - button "Cart" [ref=e41]:
+            - img [ref=e42]
+          - generic [ref=e46]: "1"
+        - generic "Rewards" [ref=e47]:
+          - button "Rewards" [ref=e48] [cursor=pointer]:
+            - img "wallet" [ref=e49]
+          - generic [ref=e50]:
+            - text: "950"
+            - img "points" [ref=e51]
+        - generic "Notifications" [ref=e52]:
+          - button "Notifications" [ref=e53] [cursor=pointer]:
+            - img [ref=e54]
+          - generic [ref=e57]: 9+
+        - button "Select language" [ref=e59] [cursor=pointer]:
+          - img [ref=e60]
+          - generic [ref=e63]: English
+          - img [ref=e64]
+        - link "My Profile" [ref=e66] [cursor=pointer]:
+          - /url: /my-profile
+          - img [ref=e68]
+          - generic [ref=e70]: Veni
+  - generic [ref=e72]:
+    - img "Timeout" [ref=e74]
+    - heading "Outside Working Hours" [level=1] [ref=e75]
+    - paragraph [ref=e76]: Accuris Express bookings are available only during working hours
+    - generic [ref=e77]:
+      - button "Go to Home" [ref=e78] [cursor=pointer]
+      - button "Schedule Booking" [ref=e79] [cursor=pointer]
+  - region "Notifications alt+T"
+  - alert [ref=e80]: Sterling Accuris - Lab Tests & Health Checkups
+  - generic [ref=e83]:
+    - generic [ref=e84]:
+      - img "notification icon" [ref=e86]
+      - generic [ref=e87]: We'd like to show you notifications for the latest news and updates.
+    - generic [ref=e89]:
+      - button "Allow" [ref=e90] [cursor=pointer]
+      - button "Cancel" [ref=e91] [cursor=pointer]
+```

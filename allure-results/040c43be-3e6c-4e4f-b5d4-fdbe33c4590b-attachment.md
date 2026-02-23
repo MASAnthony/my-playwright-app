@@ -1,0 +1,691 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - heading [level=2] [ref=e4]: Accuris Express
+    - img [ref=e5]
+    - img [ref=e6]
+    - img [ref=e7]
+    - img [ref=e8]
+    - img [ref=e9]
+  - heading "Accuris Express - Book Lab Tests & Health Checkups Online" [level=1] [ref=e10]
+  - generic [ref=e11]:
+    - generic [ref=e12]:
+      - heading [level=2] [ref=e13]: Promotional Banners
+      - img [ref=e14]
+      - img [ref=e15]
+      - img [ref=e16]
+      - img [ref=e17]
+      - img [ref=e18]
+      - img [ref=e19]
+      - img [ref=e20]
+      - img [ref=e21]
+      - img [ref=e22]
+      - img [ref=e23]
+      - img [ref=e24]
+    - generic [ref=e25]:
+      - heading [level=2] [ref=e26]: Special Offers
+      - img [ref=e27]
+      - img [ref=e28]
+      - img [ref=e29]
+      - img [ref=e30]
+    - generic [ref=e31]:
+      - heading [level=2] [ref=e32]: Checkups by Speciality - Vital Organs
+      - img [ref=e33]
+      - img [ref=e34]
+      - img [ref=e35]
+      - img [ref=e36]
+    - generic [ref=e37]:
+      - heading [level=2] [ref=e38]: Refer and Earn
+      - img [ref=e39]
+  - generic [ref=e40]:
+    - generic [ref=e41]:
+      - banner [ref=e42]:
+        - generic [ref=e44]:
+          - link "Accuris Express - Book Lab Tests & Health Packages Online" [ref=e46] [cursor=pointer]:
+            - /url: /
+            - img "Accuris Express - Book Lab Tests & Health Packages Online" [ref=e47]
+          - generic [ref=e48]:
+            - generic [ref=e50] [cursor=pointer]:
+              - generic [ref=e51]:
+                - generic [ref=e52]: "22"
+                - generic [ref=e53]: Mins
+              - img "Tube" [ref=e54]
+              - generic [ref=e55]:
+                - paragraph [ref=e56]: Collect from Home
+                - generic [ref=e57]:
+                  - generic "Vatva, 382445" [ref=e58]
+                  - img [ref=e59]
+            - generic [ref=e61]:
+              - textbox "Search tests, packages..." [ref=e62] [cursor=pointer]
+              - button "Voice search" [ref=e63] [cursor=pointer]:
+                - img [ref=e64]
+              - button "Search" [ref=e67] [cursor=pointer]:
+                - img [ref=e68]
+          - generic [ref=e71]:
+            - link "Cart" [ref=e72] [cursor=pointer]:
+              - /url: /cart
+              - button "Cart" [ref=e73]:
+                - img [ref=e74]
+            - generic "Rewards" [ref=e78]:
+              - button "Rewards" [ref=e79] [cursor=pointer]:
+                - img "wallet" [ref=e80]
+              - generic [ref=e81]:
+                - text: "950"
+                - img "points" [ref=e82]
+            - generic "Notifications" [ref=e83]:
+              - button "Notifications" [ref=e84] [cursor=pointer]:
+                - img [ref=e85]
+              - generic [ref=e88]: 9+
+            - button "Select language" [ref=e90] [cursor=pointer]:
+              - img [ref=e91]
+              - generic [ref=e94]: English
+              - img [ref=e95]
+            - link "My Profile" [ref=e97] [cursor=pointer]:
+              - /url: /my-profile
+              - img [ref=e99]
+              - generic [ref=e101]: Veni
+      - navigation [ref=e102]:
+        - generic [ref=e105]:
+          - link "All" [ref=e106] [cursor=pointer]:
+            - /url: /
+          - link "Health Packages" [ref=e107] [cursor=pointer]:
+            - /url: /categories
+          - link "Lab Test" [ref=e108] [cursor=pointer]:
+            - /url: /lab-tests
+          - button "Upload Prescription" [ref=e109] [cursor=pointer]
+          - link "Membership" [ref=e110] [cursor=pointer]:
+            - /url: /my-membership
+          - link "My Bookings" [ref=e111] [cursor=pointer]:
+            - /url: /my-bookings
+    - main [ref=e112]:
+      - generic [ref=e116]:
+        - generic [ref=e117]:
+          - button "View all categories" [ref=e118] [cursor=pointer]:
+            - img "Promotional Banner" [ref=e119]
+            - img "Promotional Banner" [ref=e120]
+            - img "Promotional Banner" [ref=e121]
+            - img "Promotional Banner" [ref=e122]
+            - img "Promotional Banner" [ref=e123]
+          - generic [ref=e124]:
+            - button "Go to slide 1" [ref=e125] [cursor=pointer]
+            - button "Go to slide 2" [ref=e127] [cursor=pointer]
+            - button "Go to slide 3" [ref=e129] [cursor=pointer]
+            - button "Go to slide 4" [ref=e131] [cursor=pointer]
+            - button "Go to slide 5" [ref=e133] [cursor=pointer]
+        - generic [ref=e136]:
+          - button "Navigate to Membership" [ref=e137] [cursor=pointer]:
+            - img "Membership" [ref=e139]
+            - paragraph [ref=e140]: Membership
+          - button "Navigate to Health Packages" [ref=e141] [cursor=pointer]:
+            - img "Health Packages" [ref=e143]
+            - paragraph [ref=e144]: Health Packages
+          - button "Navigate to Diabetes Test" [ref=e145] [cursor=pointer]:
+            - img "Diabetes Test" [ref=e147]
+            - paragraph [ref=e148]: Diabetes Test
+          - button "Navigate to Upload Prescription" [ref=e149] [cursor=pointer]:
+            - img "Upload Prescription" [ref=e151]
+            - paragraph [ref=e152]: Upload Prescription
+          - button "Navigate to Call to book Appointment" [ref=e153] [cursor=pointer]:
+            - img "Call to book Appointment" [ref=e155]
+            - paragraph [ref=e156]: Call to book Appointment
+          - button "Navigate to Fever Test" [ref=e157] [cursor=pointer]:
+            - img "Fever Test" [ref=e159]
+            - paragraph [ref=e160]: Fever Test
+          - button "Navigate to Lab Test" [ref=e161] [cursor=pointer]:
+            - img "Lab Test" [ref=e163]
+            - paragraph [ref=e164]: Lab Test
+        - generic [ref=e165]:
+          - generic [ref=e166]:
+            - heading "Hey Veni, Your Quick Tests" [level=3] [ref=e167]
+            - link "See all quick tests" [ref=e168] [cursor=pointer]:
+              - /url: /categories?tab=PACKAGE
+              - text: See All
+              - img [ref=e169]
+          - paragraph [ref=e171]: You have no recently viewed tests.
+        - button "View membership offers" [ref=e173] [cursor=pointer]:
+          - img "Membership Offer Banner" [ref=e174]
+        - generic [ref=e176]:
+          - generic [ref=e177]:
+            - heading "Most Popular Tests" [level=1] [ref=e178]
+            - link "See All" [ref=e179] [cursor=pointer]:
+              - /url: /categories?tab=MOST_POPULAR
+              - text: See All
+              - img [ref=e180]
+          - generic [ref=e182]:
+            - button "All" [ref=e183] [cursor=pointer]
+            - button "Full body checkup" [ref=e184] [cursor=pointer]
+            - button "Fever" [ref=e185] [cursor=pointer]
+            - button "STD" [ref=e186] [cursor=pointer]
+            - button "Vitamins" [ref=e187] [cursor=pointer]
+            - button "Diabetes" [ref=e188] [cursor=pointer]
+            - button "Heart" [ref=e189] [cursor=pointer]
+            - button "Thyroid" [ref=e190] [cursor=pointer]
+            - button "Kidney" [ref=e191] [cursor=pointer]
+            - button "Allergy" [ref=e192] [cursor=pointer]
+          - generic [ref=e195]: No tests available.
+        - button "View all categories" [ref=e197] [cursor=pointer]:
+          - img "Special Offer Banner" [ref=e198]
+        - generic [ref=e199]:
+          - generic [ref=e200]:
+            - heading "Popular Body Checkups" [level=2] [ref=e201]
+            - link "See All" [ref=e202] [cursor=pointer]:
+              - /url: /categories?tab=TEST_PROFILE
+              - text: See All
+              - img [ref=e203]
+          - generic [ref=e205]:
+            - generic [ref=e206] [cursor=pointer]:
+              - img [ref=e209]
+              - heading "Accuris B+ checkup - BASIC" [level=4] [ref=e211]
+              - paragraph [ref=e212]: 66 Tests
+              - paragraph [ref=e213]: ₹ 999
+              - button "View Details" [ref=e214]
+            - generic [ref=e215] [cursor=pointer]:
+              - img [ref=e218]
+              - heading "Accuris B+ checkup - GOLD" [level=4] [ref=e220]
+              - paragraph [ref=e221]: 86 Tests
+              - paragraph [ref=e222]: ₹ 2199
+              - button "View Details" [ref=e223]
+            - generic [ref=e224] [cursor=pointer]:
+              - img [ref=e227]
+              - heading "Accuris B+ checkup - PLATINUM" [level=4] [ref=e229]
+              - paragraph [ref=e230]: 89 Tests
+              - paragraph [ref=e231]: ₹ 2599
+              - button "View Details" [ref=e232]
+            - generic [ref=e233] [cursor=pointer]:
+              - img [ref=e236]
+              - heading "Accuris B+ checkup - SENIOR CITIZEN FEMALE" [level=4] [ref=e238]
+              - paragraph [ref=e239]: 93 Tests
+              - paragraph [ref=e240]: ₹ 3299
+              - button "View Details" [ref=e241]
+            - generic [ref=e242] [cursor=pointer]:
+              - img [ref=e245]
+              - heading "checkup - Platinum Plus Male" [level=4] [ref=e247]
+              - paragraph [ref=e248]: 90 Tests
+              - paragraph [ref=e249]: ₹ 2999
+              - button "View Details" [ref=e250]
+        - button "Explore health packages" [ref=e252] [cursor=pointer]:
+          - img "Promotional Banner" [ref=e253]
+        - generic [ref=e254]:
+          - heading "Book test by Age, Gender" [level=2] [ref=e255]
+          - generic [ref=e257]:
+            - generic [ref=e258] [cursor=pointer]:
+              - img "Children" [ref=e259]
+              - paragraph [ref=e260]: Children
+              - paragraph [ref=e261]: <13 Yrs
+            - generic [ref=e262] [cursor=pointer]:
+              - img "Men" [ref=e263]
+              - paragraph [ref=e264]: Men
+              - paragraph [ref=e265]: 18-45 Yrs
+            - generic [ref=e266] [cursor=pointer]:
+              - img "Women" [ref=e267]
+              - paragraph [ref=e268]: Women
+              - paragraph [ref=e269]: 18-45 Yrs
+            - generic [ref=e270] [cursor=pointer]:
+              - img "Sr. Men" [ref=e271]
+              - paragraph [ref=e272]: Sr. Men
+              - paragraph [ref=e273]: ">45 Yrs"
+            - generic [ref=e274] [cursor=pointer]:
+              - img "Sr. Women" [ref=e275]
+              - paragraph [ref=e276]: Sr. Women
+              - paragraph [ref=e277]: ">45 Yrs"
+        - generic [ref=e279]:
+          - generic [ref=e280]:
+            - paragraph [ref=e281]: Checkups by
+            - heading "Speciality" [level=2] [ref=e282]
+          - generic [ref=e283]:
+            - generic [ref=e284] [cursor=pointer]:
+              - img "Brain" [ref=e285]
+              - paragraph [ref=e286]: Brain
+            - generic [ref=e287] [cursor=pointer]:
+              - img "Heart" [ref=e288]
+              - paragraph [ref=e289]: Heart
+            - generic [ref=e290] [cursor=pointer]:
+              - img "Liver" [ref=e291]
+              - paragraph [ref=e292]: Liver
+            - generic [ref=e293] [cursor=pointer]:
+              - img "Kidneys" [ref=e294]
+              - paragraph [ref=e295]: Kidneys
+            - generic [ref=e296] [cursor=pointer]:
+              - img "Skin" [ref=e297]
+              - paragraph [ref=e298]: Skin
+            - generic [ref=e299] [cursor=pointer]:
+              - img "Pancreas" [ref=e300]
+              - paragraph [ref=e301]: Pancreas
+            - generic [ref=e302] [cursor=pointer]:
+              - img "Bone" [ref=e303]
+              - paragraph [ref=e304]: Bone
+            - generic [ref=e305] [cursor=pointer]:
+              - img "Ovaries" [ref=e306]
+              - paragraph [ref=e307]: Ovaries
+            - generic [ref=e308] [cursor=pointer]:
+              - img "Muscle" [ref=e309]
+              - paragraph [ref=e310]: Muscle
+            - generic [ref=e311] [cursor=pointer]:
+              - img "Adrenal" [ref=e312]
+              - paragraph [ref=e313]: Adrenal
+        - button "View all categories" [ref=e315] [cursor=pointer]:
+          - img "Promotional Banner showing health checkup offers" [ref=e316]
+        - generic [ref=e317]:
+          - heading "Available Offers" [level=2] [ref=e318]
+          - generic [ref=e320]:
+            - generic [ref=e321]:
+              - img [ref=e322]
+              - heading "QCPUBLIC20" [level=3] [ref=e325]
+            - button "Copy code" [ref=e326] [cursor=pointer]:
+              - img [ref=e327]
+            - paragraph [ref=e330]: Get flat 20% discount on orders above ₹99
+        - generic [ref=e331]:
+          - heading "Most Booked Lab Tests" [level=2] [ref=e332]
+          - generic [ref=e334]:
+            - generic [ref=e335] [cursor=pointer]:
+              - img "Full Body" [ref=e336]
+              - generic [ref=e337]: Full Body
+            - generic [ref=e338] [cursor=pointer]:
+              - img "Diabetes" [ref=e339]
+              - generic [ref=e340]: Diabetes
+            - generic [ref=e341] [cursor=pointer]:
+              - img "Fever" [ref=e342]
+              - generic [ref=e343]: Fever
+            - generic [ref=e344] [cursor=pointer]:
+              - img "Vitamins" [ref=e345]
+              - generic [ref=e346]: Vitamins
+            - generic [ref=e347] [cursor=pointer]:
+              - img "Thyroid" [ref=e348]
+              - generic [ref=e349]: Thyroid
+            - generic [ref=e350] [cursor=pointer]:
+              - img "Arthritis" [ref=e351]
+              - generic [ref=e352]: Arthritis
+            - generic [ref=e353] [cursor=pointer]:
+              - img "Smoking" [ref=e354]
+              - generic [ref=e355]: Smoking
+            - generic [ref=e356] [cursor=pointer]:
+              - img "Alcoholism" [ref=e357]
+              - generic [ref=e358]: Alcoholism
+            - generic [ref=e359] [cursor=pointer]:
+              - img "Junk Food" [ref=e360]
+              - generic [ref=e361]: Junk Food
+            - generic [ref=e362] [cursor=pointer]:
+              - img "Cough" [ref=e363]
+              - generic [ref=e364]: Cough
+        - generic [ref=e366]:
+          - generic [ref=e367] [cursor=pointer]:
+            - img "Upload Prescriptions" [ref=e369]
+            - heading "Upload Prescriptions" [level=2] [ref=e370]
+          - generic [ref=e371] [cursor=pointer]:
+            - img "View Reports" [ref=e373]
+            - heading "View Reports" [level=2] [ref=e374]
+          - generic [ref=e375] [cursor=pointer]:
+            - img "Explore Packages" [ref=e377]
+            - heading "Explore Packages" [level=2] [ref=e378]
+        - button "View all categories" [ref=e380] [cursor=pointer]:
+          - img "Promotional Banner showing health checkup offers" [ref=e381]
+        - generic [ref=e382]:
+          - heading "How to book a test in 3 steps" [level=2] [ref=e383]
+          - generic [ref=e384]:
+            - generic [ref=e385]:
+              - img "Book Appointment" [ref=e386]
+              - heading "Book Appointment" [level=3] [ref=e387]
+              - paragraph [ref=e388]: Select a Test/Package/Test Profile and create new booking on Sterling Accuris
+              - generic [ref=e389]: STEP 1
+              - img "arrow" [ref=e391]
+            - generic [ref=e392]:
+              - img "Home Sample Collection" [ref=e393]
+              - heading "Home Sample Collection" [level=3] [ref=e394]
+              - paragraph [ref=e395]: A certified agent from Sterling Accuris visits your location at the scheduled time for sample collection
+              - generic [ref=e396]: STEP 2
+              - img "arrow" [ref=e398]
+            - generic [ref=e399]:
+              - img "Fast & Accurate Results" [ref=e400]
+              - heading "Fast & Accurate Results" [level=3] [ref=e401]
+              - paragraph [ref=e402]: Receive your test reports in 12–24 hours. View and download the results anytime from the app or website
+              - generic [ref=e403]: STEP 3
+        - generic [ref=e404]:
+          - heading "Book Lab Tests with us" [level=2] [ref=e405]:
+            - text: Book Lab Tests
+            - text: with us
+          - generic [ref=e406]:
+            - generic [ref=e407]:
+              - img "On-time report delivery" [ref=e408]
+              - generic [ref=e409]:
+                - generic [ref=e410]: 98%
+                - generic [ref=e411]: On-time report delivery
+            - generic [ref=e412]:
+              - img "Timely sample collection" [ref=e413]
+              - generic [ref=e414]:
+                - generic [ref=e415]: 97%
+                - generic [ref=e416]: Timely sample collection
+            - generic [ref=e417]:
+              - img "Positive patient feedback" [ref=e418]
+              - generic [ref=e419]:
+                - generic [ref=e420]: 99%
+                - generic [ref=e421]: Positive patient feedback
+            - generic [ref=e423]:
+              - generic [ref=e424]: Sterling Assurance
+              - generic [ref=e425]: NABL and ICMR Certified
+        - generic [ref=e426]:
+          - generic [ref=e427]:
+            - generic [ref=e428]:
+              - img "Trust" [ref=e430]
+              - generic [ref=e431]:
+                - heading "Why Trust Us?" [level=2] [ref=e432]
+                - paragraph [ref=e433]: Setting benchmarks in trust and care for healthcare across India.
+            - generic [ref=e434]:
+              - generic [ref=e435]:
+                - img "NABL" [ref=e436]
+                - generic [ref=e437]:
+                  - generic [ref=e438]: NABL accredited
+                  - generic [ref=e439]: Pathology Lab
+                - img "NABL" [ref=e440]
+              - generic [ref=e441]:
+                - img "ICMR" [ref=e442]
+                - generic [ref=e443]:
+                  - generic [ref=e444]: ICMR approved
+                  - generic [ref=e445]: Pathology Lab
+                - img "ICMR" [ref=e446]
+          - paragraph [ref=e448]: Numbers That Speak for ACCURIS
+          - generic [ref=e449]:
+            - generic [ref=e450]:
+              - generic [ref=e451]:
+                - img "300+" [ref=e452]
+                - heading "300+" [level=3] [ref=e453]
+              - separator [ref=e454]
+              - paragraph [ref=e455]: Touchpoints Across Gujarat, Rajasthan, and Madhya Pradesh
+            - generic [ref=e456]:
+              - generic [ref=e457]:
+                - img "90+" [ref=e458]
+                - heading "90+" [level=3] [ref=e459]
+              - separator [ref=e460]
+              - paragraph [ref=e461]: World-class processing laboratories
+            - generic [ref=e462]:
+              - generic [ref=e463]:
+                - img "250+" [ref=e464]
+                - heading "250+" [level=3] [ref=e465]
+              - separator [ref=e466]
+              - paragraph [ref=e467]: Collection Centers for easy sample collection
+            - generic [ref=e468]:
+              - generic [ref=e469]:
+                - img "2000+" [ref=e470]
+                - heading "2000+" [level=3] [ref=e471]
+              - separator [ref=e472]
+              - paragraph [ref=e473]: Diagnostic tests offered
+            - generic [ref=e474]:
+              - generic [ref=e475]:
+                - img "100+" [ref=e476]
+                - heading "100+" [level=3] [ref=e477]
+              - separator [ref=e478]
+              - paragraph [ref=e479]: Expert pathologists
+            - generic [ref=e480]:
+              - generic [ref=e481]:
+                - img "1 Cr+" [ref=e482]
+                - heading "1 Cr+" [level=3] [ref=e483]
+              - separator [ref=e484]
+              - paragraph [ref=e485]: Patients served
+        - generic [ref=e486]:
+          - heading "Certified safety and quality fulfilled by Sterling Accuris" [level=2] [ref=e487]
+          - generic [ref=e488]:
+            - generic [ref=e489]:
+              - img "NABL accredited Pathology Laboratory" [ref=e490]
+              - paragraph [ref=e491]: NABL accredited Pathology Laboratory
+            - generic [ref=e492]:
+              - img "ICMR approved Pathology Laboratory" [ref=e493]
+              - paragraph [ref=e494]: ICMR approved Pathology Laboratory
+            - generic [ref=e495]:
+              - img "Quality Tests available at competitive prices" [ref=e496]
+              - paragraph [ref=e497]: Quality Tests available at competitive prices
+            - generic [ref=e498]:
+              - img "Trained & skilled Staff" [ref=e499]
+              - paragraph [ref=e500]: Trained & skilled Staff
+        - generic [ref=e502]:
+          - heading "Frequently asked questions" [level=2] [ref=e503]
+          - generic [ref=e504]:
+            - generic [ref=e505] [cursor=pointer]:
+              - button "How do you book the Accuris B+ve Basic Full Body Checkup?" [ref=e506]:
+                - heading "How do you book the Accuris B+ve Basic Full Body Checkup?" [level=3] [ref=e507]
+                - img [ref=e510]
+              - paragraph [ref=e513]: Simply visit our website or mobile app, and book the Accuris B+ve Basic Full Body Checkup, by providing the required information. You can also call us for assistance. For any queries, you can fill out the form under our contact us page and we'll get back to you as quickly as possible.
+            - button "Which package is best for a full body checkup?" [ref=e515] [cursor=pointer]:
+              - heading "Which package is best for a full body checkup?" [level=3] [ref=e516]
+              - img [ref=e518]
+            - button "Why should you book the Accuris B+ve Basic Full Body Checkup?" [ref=e521] [cursor=pointer]:
+              - heading "Why should you book the Accuris B+ve Basic Full Body Checkup?" [level=3] [ref=e522]
+              - img [ref=e524]
+            - button "What makes Sterling Accuris a better pathology lab than others?" [ref=e527] [cursor=pointer]:
+              - heading "What makes Sterling Accuris a better pathology lab than others?" [level=3] [ref=e528]
+              - img [ref=e530]
+            - button "Do you provide home visit/collection service?" [ref=e533] [cursor=pointer]:
+              - heading "Do you provide home visit/collection service?" [level=3] [ref=e534]
+              - img [ref=e536]
+            - button "What other packages does Sterling Accuris offer?" [ref=e539] [cursor=pointer]:
+              - heading "What other packages does Sterling Accuris offer?" [level=3] [ref=e540]
+              - img [ref=e542]
+            - button "How long does it take to receive test results?" [ref=e545] [cursor=pointer]:
+              - heading "How long does it take to receive test results?" [level=3] [ref=e546]
+              - img [ref=e548]
+            - button "Is there any preparation or precautions for patient before tests or body checkup?" [ref=e551] [cursor=pointer]:
+              - heading "Is there any preparation or precautions for patient before tests or body checkup?" [level=3] [ref=e552]
+              - img [ref=e554]
+        - generic [ref=e557]:
+          - heading "Lab Test Booking Made Simple & Easy" [level=1] [ref=e558]
+          - paragraph [ref=e559]: Sterling Accuris offers the Accuris B+ve Basic Full Body Checkup in Ahmedabad that covers a comprehensive set of tests to provide information regarding your overall health or detect an illness/disease.
+          - heading "Overview of Accuris B+ve Basic Full Body Checkup" [level=2] [ref=e560]
+          - generic [ref=e561]:
+            - paragraph [ref=e562]: The Accuris B+ve Basic Full Body Checkup includes a range of tests with many parameters to check that a person's organs are functioning optimally so that any potential issues are dealt with promptly.
+            - paragraph [ref=e563]: Book the Accuris B+ve Basic Full Body Checkup in Ahmedabad to monitor health, and for the early detection of diseases before they lead to severe complications.
+          - button "Read More" [ref=e565] [cursor=pointer]:
+            - text: Read More
+            - img [ref=e566]
+        - generic [ref=e569]:
+          - heading "Explore more with Sterling Accuris" [level=1] [ref=e570]
+          - generic [ref=e571]:
+            - button "Top-Tests we cover" [ref=e573] [cursor=pointer]:
+              - heading "Top-Tests we cover" [level=2] [ref=e574]
+              - img [ref=e577]
+            - button "Explore B+ve checkups" [ref=e579] [cursor=pointer]:
+              - heading "Explore B+ve checkups" [level=2] [ref=e580]
+              - img [ref=e583]
+    - contentinfo [ref=e585]:
+      - generic [ref=e586]:
+        - generic [ref=e587]:
+          - generic [ref=e588]:
+            - heading "B+ Health Packages" [level=4] [ref=e589]
+            - list [ref=e590]:
+              - listitem [ref=e591]:
+                - link "B+ve Basic Full Body Health Package" [ref=e592] [cursor=pointer]:
+                  - /url: https://staging-qc.sterlingaccuris.com/package/accuris-b-checkup-basic-qc
+              - listitem [ref=e593]:
+                - link "B+ve Platinum Full Body Health Package" [ref=e594] [cursor=pointer]:
+                  - /url: https://staging-qc.sterlingaccuris.com/package/accuris-b-checkup-platinum-qc
+              - listitem [ref=e595]:
+                - link "B+ checkup - SENIOR CITIZEN FEMALE" [ref=e596] [cursor=pointer]:
+                  - /url: https://staging-qc.sterlingaccuris.com/package/accuris-b-checkup-senior-citizen-female-qc
+              - listitem [ref=e597]:
+                - link "B+ checkup - DIABETES PROFILE" [ref=e598] [cursor=pointer]:
+                  - /url: https://staging-qc.sterlingaccuris.com/package/accuris-bve-basic-diabetes-package-qc
+              - listitem [ref=e599]:
+                - link "Accuris B+ve Queen Full Body Checkup" [ref=e600] [cursor=pointer]:
+                  - /url: https://staging-qc.sterlingaccuris.com/package/accuris-bve-queen-package-qc
+          - generic [ref=e601]:
+            - heading "Popular Test" [level=4] [ref=e602]
+            - list [ref=e603]:
+              - listitem [ref=e604]:
+                - link "HBA1c (Glycosylated Hemoglobin)" [ref=e605] [cursor=pointer]:
+                  - /url: https://staging-qc.sterlingaccuris.com/package/hba1c-glycosylated-hemoglobin-qc
+              - listitem [ref=e606]:
+                - link "Vitamin B12" [ref=e607] [cursor=pointer]:
+                  - /url: https://staging-qc.sterlingaccuris.com/package/vitamin-b12-qc
+              - listitem [ref=e608]:
+                - link "Lipid Profile" [ref=e609] [cursor=pointer]:
+                  - /url: https://staging-qc.sterlingaccuris.com/package/lipid-profile-qc
+              - listitem [ref=e610]:
+                - link "Liver Function Test" [ref=e611] [cursor=pointer]:
+                  - /url: https://staging-qc.sterlingaccuris.com/package/liver-function-test-qc
+              - listitem [ref=e612]:
+                - link "Vitamin D" [ref=e613] [cursor=pointer]:
+                  - /url: https://staging-qc.sterlingaccuris.com/package/vitamin-d-25-oh-d-qc
+              - listitem [ref=e614]:
+                - link "Renal Function Test" [ref=e615] [cursor=pointer]:
+                  - /url: https://staging-qc.sterlingaccuris.com/package/renal-function-test-qc
+              - listitem [ref=e616]:
+                - link "CBC (Complete Blood Count)" [ref=e617] [cursor=pointer]:
+                  - /url: https://staging-qc.sterlingaccuris.com/package/cbc-complete-blood-count-qc
+              - listitem [ref=e618]:
+                - link "CRP (C - Reactive Protein) Quantitative" [ref=e619] [cursor=pointer]:
+                  - /url: https://staging-qc.sterlingaccuris.com/package/crp-c-reactive-protein-quantitative-qc
+              - listitem [ref=e620]:
+                - link "Thyroid Function Test (TFT)" [ref=e621] [cursor=pointer]:
+                  - /url: https://staging-qc.sterlingaccuris.com/package/thyroid-function-test-tft-qc
+              - listitem [ref=e622]:
+                - link "TSH" [ref=e623] [cursor=pointer]:
+                  - /url: https://staging-qc.sterlingaccuris.com/package/tsh-qc
+          - generic [ref=e624]:
+            - heading "Patients" [level=4] [ref=e625]
+            - list [ref=e626]:
+              - listitem [ref=e627]:
+                - link "Patient Portal" [ref=e628] [cursor=pointer]:
+                  - /url: https://staging-qc.sterlingaccuris.com/my-profile
+              - listitem [ref=e629]:
+                - link "Book A Home Visit" [ref=e630] [cursor=pointer]:
+                  - /url: https://staging-qc.sterlingaccuris.com/categories
+              - listitem [ref=e631]:
+                - link "Book Health Packages" [ref=e632] [cursor=pointer]:
+                  - /url: https://staging-qc.sterlingaccuris.com/categories
+              - listitem [ref=e633]:
+                - link "Book a Test" [ref=e634] [cursor=pointer]:
+                  - /url: https://staging-qc.sterlingaccuris.com/categories
+              - listitem [ref=e635]:
+                - link "Upload Prescription" [ref=e636] [cursor=pointer]:
+                  - /url: https://staging-qc.sterlingaccuris.com/my-profile/my-prescriptions
+              - listitem [ref=e637]:
+                - link "Download Report" [ref=e638] [cursor=pointer]:
+                  - /url: https://staging-qc.sterlingaccuris.com/my-profile/my-reports
+              - listitem [ref=e639]:
+                - link "Find A Lab" [ref=e640] [cursor=pointer]:
+                  - /url: https://staging.sterlingaccuris.com/lab?latitude=22.9566588&longitude=72.6168667
+              - listitem [ref=e641]:
+                - link "Offers & Promotions" [ref=e642] [cursor=pointer]:
+                  - /url: https://staging.sterlingaccuris.com/offers-promotion
+          - generic [ref=e643]:
+            - heading "Insights" [level=4] [ref=e644]
+            - list [ref=e645]:
+              - listitem [ref=e646]:
+                - link "Blog" [ref=e647] [cursor=pointer]:
+                  - /url: https://staging.sterlingaccuris.com/blogs
+              - listitem [ref=e648]:
+                - link "Vlog" [ref=e649] [cursor=pointer]:
+                  - /url: https://staging.sterlingaccuris.com/vlog
+              - listitem [ref=e650]:
+                - link "News & Media" [ref=e651] [cursor=pointer]:
+                  - /url: https://staging.sterlingaccuris.com/news-media
+              - listitem [ref=e652]:
+                - link "FAQ" [ref=e653] [cursor=pointer]:
+                  - /url: https://staging.sterlingaccuris.com/faq
+              - listitem [ref=e654]:
+                - link "Help Center" [ref=e655] [cursor=pointer]:
+                  - /url: https://staging.sterlingaccuris.com/help-center
+              - listitem [ref=e656]:
+                - link "Testimonials" [ref=e657] [cursor=pointer]:
+                  - /url: https://staging.sterlingaccuris.com/coming-soon
+              - listitem [ref=e658]:
+                - link "Gallery" [ref=e659] [cursor=pointer]:
+                  - /url: https://staging.sterlingaccuris.com/coming-soon
+          - generic [ref=e660]:
+            - heading "About" [level=4] [ref=e661]
+            - list [ref=e662]:
+              - listitem [ref=e663]:
+                - link "Overview" [ref=e664] [cursor=pointer]:
+                  - /url: https://staging.sterlingaccuris.com/about-us
+              - listitem [ref=e665]:
+                - link "Corporate Team" [ref=e666] [cursor=pointer]:
+                  - /url: https://staging.sterlingaccuris.com/corporate-team
+              - listitem [ref=e667]:
+                - link "Investors" [ref=e668] [cursor=pointer]:
+                  - /url: https://staging.sterlingaccuris.com/investors
+              - listitem [ref=e669]:
+                - link "Franchise" [ref=e670] [cursor=pointer]:
+                  - /url: https://staging.sterlingaccuris.com/franchise
+              - listitem [ref=e671]:
+                - link "Patient Awareness" [ref=e672] [cursor=pointer]:
+                  - /url: https://staging.sterlingaccuris.com/patient-awareness
+              - listitem [ref=e673]:
+                - link "Awards" [ref=e674] [cursor=pointer]:
+                  - /url: https://staging.sterlingaccuris.com/awards
+              - listitem [ref=e675]:
+                - link "Partners Lab" [ref=e676] [cursor=pointer]:
+                  - /url: https://staging.sterlingaccuris.com/partners-lab
+              - listitem [ref=e677]:
+                - link "Corporate Health Package" [ref=e678] [cursor=pointer]:
+                  - /url: https://staging.sterlingaccuris.com/corporate-health-package
+          - generic [ref=e679]:
+            - generic [ref=e680]:
+              - heading "Contact" [level=4] [ref=e681]
+              - list [ref=e682]:
+                - listitem [ref=e683]:
+                  - link "Make An Inquiry" [ref=e684] [cursor=pointer]:
+                    - /url: https://staging.sterlingaccuris.com/contact?option=Feedback/Complaint
+                - listitem [ref=e685]:
+                  - link "Request A Call Back" [ref=e686] [cursor=pointer]:
+                    - /url: https://staging.sterlingaccuris.com/contact?option=Feedback/Complaint
+                - listitem [ref=e687]:
+                  - link "Feedback" [ref=e688] [cursor=pointer]:
+                    - /url: https://staging.sterlingaccuris.com/contact?option=Feedback/Complaint
+            - generic [ref=e689]:
+              - generic [ref=e690]:
+                - img [ref=e691]
+                - generic [ref=e693]: 812 813 0000
+              - generic [ref=e694]:
+                - img [ref=e695]
+                - link "customer.care@sterlingaccuris.com" [ref=e698] [cursor=pointer]:
+                  - /url: mailto:customer.care@sterlingaccuris.com
+              - generic [ref=e699]:
+                - img [ref=e700]
+                - generic [ref=e703]: 101-109, First Floor, Sankalp Square - 2 Nr. Old Sharda Mandir Cross Roads, Jalaram Mandir Railway Crossing, Ellisbridge, Ahmedabad, Gujarat-380 006
+              - generic [ref=e704]:
+                - img [ref=e705]
+                - generic [ref=e708]: 3rd floor, "Heritage Complex", Near hotel grand bhagwati, bodakdev, Ahmedabad, Gujarat-380054(India)
+        - generic [ref=e709]:
+          - img "Sterling Accuris Logo" [ref=e711]
+          - generic [ref=e712]:
+            - paragraph [ref=e713]: CIN - U85191GJ2014PTC080926
+            - generic [ref=e714]:
+              - link "Instagram" [ref=e715] [cursor=pointer]:
+                - /url: https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fsterlingaccurisdiagnostics&is_from_rle
+                - img [ref=e716]
+              - link "Facebook" [ref=e719] [cursor=pointer]:
+                - /url: https://www.facebook.com/SterlingAccurisDiagnostics
+                - img [ref=e720]
+              - link "X (Twitter)" [ref=e722] [cursor=pointer]:
+                - /url: https://x.com/SterlingAccuris
+                - img [ref=e723]
+              - link "YouTube" [ref=e725] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC_VsPf9X9HeHLIgkHFF4L4A
+                - img [ref=e726]
+              - link "LinkedIn" [ref=e729] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/sterlingaccurisdiagnostics
+                - img [ref=e730]
+        - separator [ref=e734]
+        - generic [ref=e735]:
+          - paragraph [ref=e736]:
+            - link "Privacy Policy" [ref=e737] [cursor=pointer]:
+              - /url: https://staging.sterlingaccuris.com/privacy-policy
+            - text: "|"
+            - link "Terms & Conditions" [ref=e738] [cursor=pointer]:
+              - /url: https://staging.sterlingaccuris.com/term-condition
+            - text: "|"
+            - link "Quality Policy" [ref=e739] [cursor=pointer]:
+              - /url: https://staging.sterlingaccuris.com/quality-policy
+            - text: "|"
+            - link "Sitemap" [ref=e740] [cursor=pointer]:
+              - /url: https://staging-qc.sterlingaccuris.com/sitemap.xml
+          - paragraph [ref=e741]: © STERLING ACCURIS WELLNESS PVT. LTD. 2023 | ALL RIGHTS RESERVED
+  - region "Notifications alt+T"
+  - alert [ref=e742]
+  - generic [ref=e745]:
+    - generic [ref=e746]:
+      - img "notification icon" [ref=e748]
+      - generic [ref=e749]: We'd like to show you notifications for the latest news and updates.
+    - generic [ref=e751]:
+      - button "Allow" [ref=e752] [cursor=pointer]
+      - button "Cancel" [ref=e753] [cursor=pointer]
+```
