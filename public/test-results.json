@@ -45,6 +45,19 @@
         {
           "outputFile": "public/test-results.json"
         }
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "C:\\Users\\Anthony\\OneDrive - SKILLMINE TECHNOLOGY CONSULTING PRIVATE LIMITED\\Documents\\Testing\\playwright\\my-playwright-app\\node_modules\\ortoni-report\\dist\\ortoni-report.js",
+        {
+          "open": true,
+          "folderPath": "ortoni-report",
+          "filename": "index.html",
+          "title": "My Playwright Report"
+        }
       ]
     ],
     "reportSlowTests": {
@@ -94,7 +107,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "timedOut",
-                      "duration": 31607,
+                      "duration": 31499,
                       "error": {
                         "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
                         "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
@@ -109,7 +122,7 @@
                             "column": 63,
                             "line": 41
                           },
-                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Add' }).first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 39 |\u001b[39m\n \u001b[90m 40 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Add to Cart and View Cart'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Add'\u001b[39m })\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'View Cart'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Review Cart'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 44 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\Anthony\\OneDrive - SKILLMINE TECHNOLOGY CONSULTING PRIVATE LIMITED\\Documents\\Testing\\playwright\\my-playwright-app\\tests\\afterLogin.spec.ts:41:63\u001b[22m\n\u001b[2m    at C:\\Users\\Anthony\\OneDrive - SKILLMINE TECHNOLOGY CONSULTING PRIVATE LIMITED\\Documents\\Testing\\playwright\\my-playwright-app\\tests\\afterLogin.spec.ts:40:16\u001b[22m"
+                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Add' }).first()\u001b[22m\n\u001b[2m    - waiting for\" https://staging-qc.sterlingaccuris.com/\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://staging-qc.sterlingaccuris.com/\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 39 |\u001b[39m\n \u001b[90m 40 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Add to Cart and View Cart'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Add'\u001b[39m })\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'View Cart'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Review Cart'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 44 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\Anthony\\OneDrive - SKILLMINE TECHNOLOGY CONSULTING PRIVATE LIMITED\\Documents\\Testing\\playwright\\my-playwright-app\\tests\\afterLogin.spec.ts:41:63\u001b[22m\n\u001b[2m    at C:\\Users\\Anthony\\OneDrive - SKILLMINE TECHNOLOGY CONSULTING PRIVATE LIMITED\\Documents\\Testing\\playwright\\my-playwright-app\\tests\\afterLogin.spec.ts:40:16\u001b[22m"
                         }
                       ],
                       "stdout": [],
@@ -118,30 +131,30 @@
                       "steps": [
                         {
                           "title": "Navigate to application",
-                          "duration": 2800
+                          "duration": 811
                         },
                         {
                           "title": "Navigate to Health Packages",
-                          "duration": 1190
+                          "duration": 3751
                         },
                         {
                           "title": "Initiate login by adding package",
-                          "duration": 1765
+                          "duration": 1537
                         },
                         {
                           "title": "Enter OTP and Login",
-                          "duration": 5370
+                          "duration": 4408
                         },
                         {
                           "title": "Select Address and Package",
-                          "duration": 2079
+                          "duration": 2037
                         },
                         {
                           "title": "Add to Cart and View Cart",
-                          "duration": 16507,
+                          "duration": 17234,
                           "error": {
-                            "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Add' }).first()\u001b[22m\n",
-                            "stack": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Add' }).first()\u001b[22m\n\n    at C:\\Users\\Anthony\\OneDrive - SKILLMINE TECHNOLOGY CONSULTING PRIVATE LIMITED\\Documents\\Testing\\playwright\\my-playwright-app\\tests\\afterLogin.spec.ts:41:63\n    at C:\\Users\\Anthony\\OneDrive - SKILLMINE TECHNOLOGY CONSULTING PRIVATE LIMITED\\Documents\\Testing\\playwright\\my-playwright-app\\tests\\afterLogin.spec.ts:40:16",
+                            "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Add' }).first()\u001b[22m\n\u001b[2m    - waiting for\" https://staging-qc.sterlingaccuris.com/\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://staging-qc.sterlingaccuris.com/\"\u001b[22m\n",
+                            "stack": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Add' }).first()\u001b[22m\n\u001b[2m    - waiting for\" https://staging-qc.sterlingaccuris.com/\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://staging-qc.sterlingaccuris.com/\"\u001b[22m\n\n    at C:\\Users\\Anthony\\OneDrive - SKILLMINE TECHNOLOGY CONSULTING PRIVATE LIMITED\\Documents\\Testing\\playwright\\my-playwright-app\\tests\\afterLogin.spec.ts:41:63\n    at C:\\Users\\Anthony\\OneDrive - SKILLMINE TECHNOLOGY CONSULTING PRIVATE LIMITED\\Documents\\Testing\\playwright\\my-playwright-app\\tests\\afterLogin.spec.ts:40:16",
                             "location": {
                               "file": "C:\\Users\\Anthony\\OneDrive - SKILLMINE TECHNOLOGY CONSULTING PRIVATE LIMITED\\Documents\\Testing\\playwright\\my-playwright-app\\tests\\afterLogin.spec.ts",
                               "column": 63,
@@ -151,7 +164,7 @@
                           }
                         }
                       ],
-                      "startTime": "2026-02-23T12:08:16.135Z",
+                      "startTime": "2026-02-23T13:50:57.402Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -213,7 +226,7 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 22561,
+                      "duration": 20237,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -221,34 +234,34 @@
                       "steps": [
                         {
                           "title": "Navigate to application",
-                          "duration": 786
+                          "duration": 724
                         },
                         {
                           "title": "Initiate login with mobile number",
-                          "duration": 2892
+                          "duration": 2228
                         },
                         {
                           "title": "Enter OTP and submit",
-                          "duration": 4170
+                          "duration": 4472
                         },
                         {
                           "title": "Select address and navigate to healthy packages",
-                          "duration": 3296
+                          "duration": 2641
                         },
                         {
                           "title": "Add package and view cart",
-                          "duration": 4411
+                          "duration": 2930
                         },
                         {
                           "title": "Select member and review cart",
-                          "duration": 1104
+                          "duration": 1135
                         },
                         {
                           "title": "Choose payment and confirm booking",
-                          "duration": 3873
+                          "duration": 4070
                         }
                       ],
-                      "startTime": "2026-02-23T12:08:55.826Z",
+                      "startTime": "2026-02-23T13:51:38.785Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -287,7 +300,7 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 21935,
+                  "duration": 22043,
                   "errors": [],
                   "stdout": [
                     {
@@ -299,14 +312,14 @@
                   "steps": [
                     {
                       "title": "Open main site and handle popups",
-                      "duration": 16791
+                      "duration": 16387
                     },
                     {
                       "title": "Click Instatest and wait for new tab",
-                      "duration": 2300
+                      "duration": 2730
                     }
                   ],
-                  "startTime": "2026-02-23T12:09:19.498Z",
+                  "startTime": "2026-02-23T13:52:00.520Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -324,8 +337,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-23T12:08:09.603Z",
-    "duration": 93047.701,
+    "startTime": "2026-02-23T13:50:40.747Z",
+    "duration": 103342.09000000001,
     "expected": 2,
     "skipped": 0,
     "unexpected": 1,

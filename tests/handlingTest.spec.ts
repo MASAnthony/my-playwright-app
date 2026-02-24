@@ -1,0 +1,34 @@
+import { test, expect } from '@playwright/test';
+
+test('test', async ({ page }) => {
+  await page.goto('https://staging-qc.sterlingaccuris.com/');
+  await page.getByRole('button', { name: 'Login' }).click();
+  await page.locator('div').filter({ hasText: /^\+91$/ }).click();
+  await page.getByRole('textbox', { name: 'Mobile Number *' }).fill('9363564962');
+  await page.getByRole('button', { name: 'Send OTP' }).click();
+  await page.getByRole('textbox').first().click();
+  await page.getByRole('textbox').first().fill('1');
+  await page.getByRole('textbox').nth(1).fill('1');
+  await page.getByRole('textbox').nth(2).fill('1');
+  await page.getByRole('textbox').nth(3).fill('1');
+  await page.getByRole('button', { name: 'Login' }).click();
+  await page.getByRole('button', { name: 'Select' }).nth(1).click();
+  await page.getByRole('button', { name: 'Cancel' }).click();
+  await page.getByRole('button', { name: 'Upload Prescription', exact: true }).click();
+  await page.getByRole('img', { name: 'upload', exact: true }).click();
+  await page.getByText('Click here to Upload Jpeg,').click();
+  await page.getByText('Accuris ExpressAccuris').setInputFiles('image (1) (1).png');
+  await page.getByRole('button', { name: 'Proceed (1 file)' }).click();
+  await page.getByRole('button', { name: 'Save & Close' }).click();
+  await page.getByRole('button', { name: 'Close' }).click();
+  const page1Promise = page.waitForEvent('popup');
+  await page.getByRole('button', { name: 'View Document' }).first().click();
+  const page1 = await page1Promise;
+  const page2Promise = page.waitForEvent('popup');
+  const downloadPromise = page.waitForEvent('download');
+  await page.getByRole('button', { name: 'Download Document' }).first().click();
+  const page2 = await page2Promise;
+  const download = await downloadPromise;
+  await page.getByRole('button', { name: 'Delete Prescription' }).first().click();
+  await page.getByRole('button', { name: 'Delete', exact: true }).click();
+});
